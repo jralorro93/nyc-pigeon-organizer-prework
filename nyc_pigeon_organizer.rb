@@ -4,6 +4,7 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   
   data.each do |attribute, info|
+    binding.pry
     info.each do |category, array|
       array.each do |name|
         pigeon_list[name] = {:color => [], :gender => [], :lives => []}
